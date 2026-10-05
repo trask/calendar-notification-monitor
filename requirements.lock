@@ -1,0 +1,13 @@
+# All runtime, build and test dependencies, including transitive dependencies.
+icalendar==6.3.2
+python-dateutil==2.9.0.post0
+six==1.17.0
+tzdata==2025.2
+setuptools==80.9.0
+wheel==0.45.1
+pytest==8.4.2
+colorama==0.4.6
+iniconfig==2.1.0
+packaging==25.0
+pluggy==1.6.0
+Pygments==2.19.2

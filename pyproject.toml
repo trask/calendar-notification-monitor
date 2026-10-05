@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calendar-notification-monitor"
+version = "0.1.0"
+description = "Anonymous, sanitized structural monitoring of the public OpenTelemetry calendar"
+requires-python = ">=3.12"
+dependencies = ["icalendar==6.3.2"]
+
+[project.scripts]
+calendar-monitor = "calendar_notification_monitor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
